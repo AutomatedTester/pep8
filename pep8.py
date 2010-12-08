@@ -1261,7 +1261,7 @@ def process_options(arglist=None):
                       help="print status messages, or debug with -vv")
     parser.add_option('-q', '--quiet', default=0, action='count',
                       help="report only file names, or nothing with -qq")
-    parser.add_option('-r', '--repeat', action='store_true',
+    parser.add_option('-r', '--repeat', action='store_true', default=True,
                       help="show all occurrences of the same error")
     parser.add_option('--exclude', metavar='patterns', default=DEFAULT_EXCLUDE,
                       help="exclude files or directories which match these "
