@@ -111,7 +111,7 @@ except NameError:
 
 DEFAULT_EXCLUDE = '.svn,CVS,.bzr,.hg,.git'
 DEFAULT_IGNORE = 'E24'
-MAX_LINE_LENGTH = 79
+MAX_LINE_LENGTH = 100 
 
 INDENT_REGEX = re.compile(r'([ \t]*)')
 RAISE_COMMA_REGEX = re.compile(r'raise\s+\w+\s*(,)')
@@ -231,7 +231,7 @@ def missing_newline(physical_line):
 
 def maximum_line_length(physical_line):
     """
-    Limit all lines to a maximum of 79 characters.
+    Limit all lines to a maximum of 100 characters.
 
     There are still many devices around that are limited to 80 character
     lines; plus, limiting windows to 80 characters makes it possible to have
